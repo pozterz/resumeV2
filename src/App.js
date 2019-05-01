@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import "./App.css"
+import ProfileImg from "./components/ProfileImg"
+import Quote from "./components/Quote"
+import Bio from "./components/Bio"
+import Skills from "./components/Skills"
+import { Row, Col } from "antd"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="container">
+        <div className="top-image">
+          <Quote />
+        </div>
+        <div className="card-container">
+          <ProfileImg />
+          <Row>
+            <div style={{ marginTop: "-55px" }}>
+              <Col md={12}>
+                <Bio />
+              </Col>
+              <Col md={12}>
+                <Skills />
+              </Col>
+            </div>
+          </Row>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
