@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/resumeV2/static/css/main.59880a09.chunk.css",
+    "main.js": "/resumeV2/static/js/main.aab0bf18.chunk.js",
+    "main.js.map": "/resumeV2/static/js/main.aab0bf18.chunk.js.map",
+    "runtime~main.js": "/resumeV2/static/js/runtime~main.1fa54dad.js",
+    "runtime~main.js.map": "/resumeV2/static/js/runtime~main.1fa54dad.js.map",
+    "static/css/2.08a4298a.chunk.css": "/resumeV2/static/css/2.08a4298a.chunk.css",
+    "static/js/2.3c45f598.chunk.js": "/resumeV2/static/js/2.3c45f598.chunk.js",
+    "static/js/2.3c45f598.chunk.js.map": "/resumeV2/static/js/2.3c45f598.chunk.js.map",
+    "index.html": "/resumeV2/index.html",
+    "precache-manifest.c69dd51938b20367c225ec147730a0bf.js": "/resumeV2/precache-manifest.c69dd51938b20367c225ec147730a0bf.js",
+    "service-worker.js": "/resumeV2/service-worker.js",
+    "static/css/2.08a4298a.chunk.css.map": "/resumeV2/static/css/2.08a4298a.chunk.css.map",
+    "static/css/main.59880a09.chunk.css.map": "/resumeV2/static/css/main.59880a09.chunk.css.map",
+    "static/media/Go-Logo_Black.png": "/resumeV2/static/media/Go-Logo_Black.eded3ee4.png",
+    "static/media/ant-icon.svg": "/resumeV2/static/media/ant-icon.b29324c4.svg",
+    "static/media/App.css": "/resumeV2/static/media/clouds-daylight-heaven-2193239.8e5714e3.jpg"
+  }
+}
