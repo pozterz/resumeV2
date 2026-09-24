@@ -1,1 +1,619 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="shortcut icon" href="/resumeV2/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous"><link rel="manifest" href="/resumeV2/manifest.json"/><title>Tharathep Numuean - Resume</title><link href="/resumeV2/static/css/2.08a4298a.chunk.css" rel="stylesheet"><link href="/resumeV2/static/css/main.59880a09.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={1:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/resumeV2/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/resumeV2/static/js/2.3c45f598.chunk.js"></script><script src="/resumeV2/static/js/main.8187826a.chunk.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tharathep Numuean (Jo) — Resume</title>
+<meta name="description" content="Tharathep Numuean (Jo), Software Development Supervisor at Netbay. Previously Full Stack Developer at Agoda and Pi R Square.">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="icon" href="favicon.ico">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --hero: #2B3FE0;
+  --hero-tint: #E7EAFC;
+  --cream: #F4F1EA;
+  --ink: #121212;
+  --muted: #5E5A51;
+  --body: #4A463D;
+  --coral: #FF6B4A;
+  --coral-tint: #FFE3DB;
+  --butter: #FFD84D;
+  --butter-tint: #FFF4C7;
+  --mint: #A8E6C3;
+  --mint-tint: #E2F6EB;
+  --lilac: #CDBDFF;
+  --lilac-tint: #F1ECFF;
+  --line: 1.5px solid var(--ink);
+  --display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --serif: 'Instrument Serif', Georgia, serif;
+  --sans: 'Geist', system-ui, sans-serif;
+  --mono: 'Geist Mono', ui-monospace, monospace;
+  --gutter: 32px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+h1, h2, h3, p, ol, ul { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 2px solid var(--hero); outline-offset: 3px; border-radius: 8px; }
+.wrap { max-width: 1280px; margin: 0 auto; padding: 0 var(--gutter); }
+.mono { font-family: var(--mono); }
+.label { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.serif-it { font-family: var(--serif); font-weight: 400; font-style: italic; letter-spacing: -.01em; }
+
+/* Nav */
+.nav { height: 72px; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 800; font-size: 22px; letter-spacing: -.02em; }
+.nav-links { display: flex; gap: 4px; font-family: var(--mono); font-size: 13px; }
+.nav-links a { padding: 14px; border-radius: 999px; }
+.nav-links a:hover { background: rgba(18,18,18,.06); }
+.nav-links span { color: #7A766C; }
+
+/* Bento */
+.bento { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: repeat(4, 180px); gap: 16px; padding-top: 8px; }
+.tile { border-radius: 28px; padding: 22px 24px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; }
+.tile .tag { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; }
+.t-name { grid-column: 1 / span 7; grid-row: 1 / span 3; background: var(--hero); color: var(--cream); padding: 36px; }
+.t-name .rings { position: absolute; right: -170px; top: -150px; width: 520px; height: 520px; pointer-events: none; }
+.t-name .pills { position: relative; display: flex; gap: 10px; flex-wrap: wrap; font-family: var(--mono); font-size: 12px; letter-spacing: .1em; }
+.t-name .pills span { padding: 7px 12px; border-radius: 999px; border: 1px solid rgba(244,241,234,.45); }
+.t-name .pills span.hl { background: var(--butter); color: var(--ink); border-color: var(--butter); }
+.t-name h1 { position: relative; font-family: var(--display); font-weight: 800; font-size: clamp(46px, 7.5vw, 96px); line-height: .86; letter-spacing: -.045em; }
+.t-name h1 em { color: var(--butter); }
+.t-name p { position: relative; margin-top: 28px; font-size: 19px; line-height: 1.5; max-width: 520px; color: rgba(244,241,234,.92); }
+.t-portrait { grid-column: 8 / span 3; grid-row: 1 / span 2; background: var(--butter); padding: 0; align-items: center; justify-content: center; }
+.t-portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.t-portrait .mono-fallback { font-family: var(--display); font-weight: 800; font-size: 120px; letter-spacing: -.05em; line-height: 1; }
+.t-portrait .ring { position: absolute; left: -40px; bottom: -120px; width: 300px; height: 300px; }
+.t-now { grid-column: 11 / span 2; grid-row: 1 / span 2; background: var(--ink); color: var(--cream); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: #7BE0A6; box-shadow: 0 0 0 4px rgba(123,224,166,.2); display: inline-block; }
+.t-now .co { font-family: var(--display); font-weight: 800; font-size: 34px; line-height: 1; letter-spacing: -.03em; }
+.t-now .role { font-size: 14px; line-height: 1.35; color: #D6D2C8; margin-top: 8px; }
+.t-now .meta { font-family: var(--mono); font-size: 12px; color: #B8B4AA; margin-top: 12px; padding-top: 10px; border-top: 1px solid #3A3833; }
+.big-num { font-family: var(--display); font-weight: 800; font-size: 92px; line-height: .8; letter-spacing: -.05em; }
+.t-xp { grid-column: 8 / span 2; grid-row: 3; background: var(--coral); }
+.t-xp .row { display: flex; align-items: baseline; gap: 8px; }
+.t-xp .row span:last-child { font-size: 14px; font-weight: 500; line-height: 1.2; }
+.t-icpc { grid-column: 10 / span 3; grid-row: 3; background: var(--mint); }
+.t-icpc .row { display: flex; align-items: flex-end; justify-content: space-between; gap: 8px; }
+.t-evo { grid-column: 1 / span 8; grid-row: 4; background: #fff; border: var(--line); padding: 22px 28px; }
+.t-evo .tag { color: var(--muted); }
+.evo-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.evo-item { display: flex; align-items: center; gap: 14px; }
+.badge { width: 60px; height: 60px; flex: none; border-radius: 50%; border: var(--line); display: flex; align-items: center; justify-content: center; font-family: var(--display); font-weight: 800; font-size: 20px; }
+.evo-item b { display: block; font-family: var(--display); font-weight: 700; font-size: 22px; letter-spacing: -.02em; }
+.evo-item small { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.t-quest { grid-column: 9 / span 4; grid-row: 4; background: var(--lilac); }
+.t-quest .title { font-family: var(--display); font-weight: 800; font-size: 26px; line-height: 1; letter-spacing: -.03em; }
+.t-quest ul { font-size: 13px; line-height: 1.35; color: #2A2440; display: grid; gap: 3px; }
+
+/* Tapes */
+.tapes { position: relative; height: 230px; margin-top: 24px; overflow: hidden; }
+.tape { position: absolute; left: -5%; width: 110%; height: 66px; display: flex; align-items: center; gap: 28px; white-space: nowrap; font-family: var(--display); letter-spacing: -.02em; padding-left: 40px; overflow: hidden; }
+.tape-a { top: 70px; background: var(--butter); border-top: var(--line); border-bottom: var(--line); transform: rotate(2.5deg); font-weight: 800; font-size: 30px; }
+.tape-a .serif-it { font-size: 34px; }
+.tape-b { top: 84px; background: var(--hero); color: var(--cream); transform: rotate(-3deg); font-weight: 700; font-size: 28px; gap: 26px; }
+.tape-b i { color: var(--butter); font-style: normal; }
+
+/* Sections */
+section.block { padding-top: 120px; }
+.head { display: flex; justify-content: space-between; align-items: flex-end; gap: 48px; margin-bottom: 40px; }
+.head h2 { margin-top: 14px; font-family: var(--display); font-weight: 800; font-size: clamp(48px, 6.6vw, 84px); line-height: .9; letter-spacing: -.045em; }
+.head h2 .serif-it { color: var(--hero); }
+.head p { font-size: 16px; line-height: 1.55; color: var(--body); max-width: 330px; }
+#skills { padding-top: 72px; }
+
+/* Skill tree */
+.tree-card { border-radius: 32px; border: var(--line); background-color: #fff; background-image: radial-gradient(#DCD6C9 1.2px, transparent 1.2px); background-size: 22px 22px; padding: 48px 48px 32px; }
+.tree { display: grid; grid-template-columns: 170px 60px minmax(0, 1fr); align-items: center; }
+.root { width: 170px; height: 170px; border-radius: 50%; background: var(--ink); color: var(--cream); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; box-shadow: 0 0 0 8px #fff, 0 0 0 9.5px var(--ink); position: relative; z-index: 1; }
+.root b { font-family: var(--display); font-weight: 800; font-size: 30px; line-height: .95; letter-spacing: -.03em; text-align: center; }
+.root span { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; color: #B8B4AA; }
+.trunk { align-self: stretch; position: relative; }
+.trunk::before { content: ""; position: absolute; left: 0; right: 50%; top: 50%; border-top: 2px solid var(--ink); }
+.branches { display: grid; gap: 32px; margin-left: -30px; padding-left: 30px; }
+.branch { display: grid; grid-template-columns: 214px minmax(0, 1fr); align-items: start; gap: 36px; position: relative; }
+.branch::before { content: ""; position: absolute; left: -30px; width: 30px; top: 35px; border-top: 2px solid var(--ink); }
+.branch.next::before { border-top-style: dashed; }
+.branch::after { content: ""; position: absolute; left: -30px; top: 0; bottom: -32px; border-left: 2px solid var(--ink); }
+.branch:first-child::after { top: 35px; }
+.branch:nth-last-child(2)::after { bottom: 0; }
+.branch:last-child::after { top: -32px; bottom: auto; height: 68px; border-left-style: dashed; }
+.node { height: 72px; border: var(--line); border-radius: 18px; box-shadow: 4px 4px 0 var(--ink); padding: 0 16px; display: flex; align-items: center; justify-content: space-between; gap: 10px; white-space: nowrap; font-family: var(--display); font-weight: 700; font-size: 19px; letter-spacing: -.02em; position: relative; }
+.node::after { content: ""; position: absolute; left: 100%; width: 38px; top: 50%; border-top: 2px solid var(--ink); margin-left: 1.5px; }
+.branch.next .node { box-shadow: none; border-style: dashed; }
+.branch.next .node::after { border-top-style: dashed; }
+.node span { font-family: var(--mono); font-size: 12px; font-weight: 400; }
+.leaves { display: flex; flex-wrap: wrap; gap: 8px; position: relative; padding-top: 6px; justify-self: start; }
+.leaves::before { content: ""; position: absolute; left: 0; right: 0; top: 36px; border-top: 2px solid var(--ink); }
+.branch.next .leaves::before { border-top-style: dashed; }
+.leaf { position: relative; height: 60px; padding: 0 12px; border: var(--line); border-radius: 14px; display: flex; align-items: center; gap: 10px; }
+.branch.next .leaf { border-style: dashed; }
+.leaf i { width: 12px; height: 12px; border-radius: 4px; flex: none; }
+.leaf b { display: block; font-size: 16px; font-weight: 600; }
+.leaf small { display: block; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.b-fe .node { background: var(--hero); color: var(--cream); } .b-fe .leaf { background: var(--hero-tint); }
+.b-be .node { background: var(--coral); } .b-be .leaf { background: var(--coral-tint); }
+.b-cf .node { background: #FFB3D1; } .b-cf .leaf { background: #FFE6F0; }
+.b-db .node { background: #9FD8F5; } .b-db .leaf { background: #E3F4FD; }
+.b-wf .node { background: var(--butter); } .b-wf .leaf { background: var(--butter-tint); }
+.b-ps .node { background: var(--mint); } .b-ps .leaf { background: var(--mint-tint); }
+.b-nx .node { background: var(--lilac); } .b-nx .leaf { background: var(--lilac-tint); }
+.legend { margin-top: 32px; border-top: var(--line); padding-top: 20px; display: flex; flex-wrap: wrap; gap: 16px 32px; font-family: var(--mono); font-size: 12px; color: var(--body); }
+.legend span { display: flex; align-items: center; gap: 10px; }
+.legend .ln { width: 28px; border-top: 2px solid var(--ink); }
+.legend .ln.dash { border-top-style: dashed; }
+
+/* Evolution */
+.stages { display: grid; grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr) 64px minmax(0, 1fr); align-items: stretch; }
+.stage { min-height: 300px; border-radius: 28px; border: var(--line); box-shadow: 6px 6px 0 var(--ink); padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; }
+.stage .top { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; }
+.stage .top span:first-child { display: flex; align-items: center; gap: 8px; }
+.stage h3 { font-family: var(--display); font-weight: 800; font-size: 46px; line-height: .95; letter-spacing: -.04em; }
+.stage p { margin-top: 10px; font-size: 15px; line-height: 1.45; }
+.stage .years { display: block; margin-top: 10px; font-family: var(--mono); font-size: 13px; padding-top: 12px; border-top: 1.5px solid currentColor; }
+.stage-1 { background: var(--butter); } .stage-2 { background: var(--coral); } .stage-3 { background: var(--hero); color: var(--cream); }
+.arrow { display: flex; align-items: center; justify-content: center; }
+.span-bar { margin-top: 40px; }
+.span-segs { display: flex; gap: 6px; height: 44px; }
+.span-segs div { border: var(--line); border-radius: 12px; padding: 0 14px; display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; }
+.span-segs small { font-family: var(--mono); font-size: 11px; font-weight: 400; }
+.span-ticks { position: relative; height: 18px; margin-top: 10px; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.span-ticks span { position: absolute; transform: translateX(-50%); }
+.span-ticks span:first-child { transform: none; }
+
+/* Contests */
+.contest-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 16px; }
+.chart-card { border-radius: 28px; border: var(--line); background: #fff; padding: 32px; display: flex; flex-direction: column; gap: 16px; }
+.chart-card svg { width: 100%; height: auto; font-family: var(--mono); }
+.ranks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.rank { min-height: 140px; border-radius: 24px; border: var(--line); background: #fff; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; }
+.rank .y { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.rank b { font-family: var(--display); font-weight: 800; font-size: 64px; line-height: .9; letter-spacing: -.04em; }
+.rank.podium { background: var(--butter); box-shadow: 5px 5px 0 var(--ink); }
+.rank.podium .y { color: var(--ink); }
+
+.edu { margin-top: 16px; border-radius: 28px; border: var(--line); background: #fff; padding: 28px 32px; display: flex; align-items: center; gap: 24px; }
+.edu-ic { width: 64px; height: 64px; flex: none; border-radius: 50%; background: var(--butter); border: var(--line); display: flex; align-items: center; justify-content: center; }
+.edu b { display: block; margin: 8px 0 4px; font-family: var(--display); font-weight: 800; font-size: clamp(22px, 2.6vw, 34px); line-height: 1.05; letter-spacing: -.03em; }
+.edu div > span:last-child { font-size: 15px; color: var(--body); }
+
+/* Next chapter */
+.biz-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+.biz { min-height: 260px; border-radius: 24px; border: var(--line); box-shadow: 5px 5px 0 var(--ink); padding: 22px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+.biz-top { display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
+.biz-ic { width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid currentColor; display: flex; align-items: center; justify-content: center; }
+.biz b { display: block; font-family: var(--display); font-weight: 800; font-size: 22px; line-height: .95; letter-spacing: -.03em; }
+.biz-line { display: block; margin-top: 8px; font-size: 14px; line-height: 1.4; }
+
+/* Find me */
+.links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+.links a { height: 168px; border-radius: 24px; border: var(--line); padding: 24px; display: flex; flex-direction: column; justify-content: space-between; transition: transform .15s ease, box-shadow .15s ease; }
+.links a:hover { transform: translate(-3px, -3px); box-shadow: 5px 5px 0 var(--ink); }
+.links .h { display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 12px; }
+.links b { font-family: var(--display); font-weight: 800; font-size: 40px; letter-spacing: -.03em; }
+.l-gh { background: var(--ink); color: var(--cream); } .l-li { background: var(--hero); color: var(--cream); } .l-md { background: var(--butter); } .l-fb { background: var(--coral); }
+
+/* Footer */
+footer { padding-top: 120px; overflow: hidden; }
+.foot-meta { display: flex; justify-content: space-between; gap: 16px; font-family: var(--mono); font-size: 12px; color: var(--muted); border-top: var(--line); padding-top: 16px; }
+.wordmark { font-family: var(--display); font-weight: 800; font-size: min(calc((100vw - 2 * var(--gutter)) / 5.5), 222px); line-height: .74; letter-spacing: -.06em; color: var(--hero); margin: 12px 0 -.06em -.04em; white-space: nowrap; }
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .bento { grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: none; grid-auto-rows: minmax(180px, auto); }
+  .t-name { grid-column: 1 / -1; grid-row: auto; min-height: 460px; }
+  .t-portrait { grid-column: 1 / span 3; grid-row: auto; min-height: 280px; }
+  .t-now { grid-column: 4 / span 3; grid-row: auto; }
+  .t-xp { grid-column: 1 / span 3; grid-row: auto; }
+  .t-icpc { grid-column: 4 / span 3; grid-row: auto; }
+  .t-evo { grid-column: 1 / -1; grid-row: auto; }
+  .t-quest { grid-column: 1 / -1; grid-row: auto; }
+  .tree { grid-template-columns: 1fr; }
+  .root { width: auto; height: 64px; border-radius: 999px; flex-direction: row; justify-content: space-between; padding: 0 22px; box-shadow: none; }
+  .root b br { display: none; }
+  .trunk { height: 24px; }
+  .trunk::before { left: 18px; right: auto; top: 0; bottom: 0; border-top: 0; border-left: 2px solid var(--ink); }
+  .branches { margin-left: 0; padding-left: 44px; gap: 22px; }
+  .branch { grid-template-columns: 1fr; gap: 10px; }
+  .branch::before { left: -26px; width: 26px; top: 25px; }
+  .branch::after { left: -26px; bottom: -22px; }
+  .branch:first-child::after { top: 0; }
+  .branch:last-child::after { top: -22px; height: 48px; }
+  .node { height: 52px; justify-self: start; gap: 14px; font-size: 18px; box-shadow: 3px 3px 0 var(--ink); }
+  .node::after, .leaves::before { display: none; }
+  .leaves { padding-top: 0; }
+  .leaf { height: 48px; }
+  .stages { grid-template-columns: 1fr; }
+  .stage { min-height: 0; }
+  .arrow { height: 48px; }
+  .arrow svg { transform: rotate(90deg); }
+  .contest-grid { grid-template-columns: 1fr; }
+  .links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .biz-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* Phone */
+@media (max-width: 640px) {
+  :root { --gutter: 16px; }
+  .nav { height: 60px; }
+  .nav-links { display: none; }
+  .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; grid-auto-rows: minmax(150px, auto); }
+  .tile { border-radius: 24px; padding: 18px; }
+  .t-name { min-height: 380px; padding: 24px; }
+  .t-name .rings { width: 320px; height: 320px; right: -130px; top: -120px; }
+  .t-name .pills span:not(.hl) { display: none; }
+  .t-name p { font-size: 16px; margin-top: 18px; }
+  .t-portrait { grid-column: 1; min-height: 200px; }
+  .t-portrait .mono-fallback { font-size: 72px; }
+  .t-now { grid-column: 2; }
+  .t-now .co { font-size: 30px; }
+  .t-now .role { font-size: 13px; }
+  .t-xp { grid-column: 1; } .t-icpc { grid-column: 2; }
+  .big-num { font-size: 68px; }
+  .t-icpc svg { width: 52px; }
+  .t-icpc .tag-long { display: none; }
+  .evo-row { gap: 4px; align-items: flex-start; }
+  .evo-item { flex-direction: column; gap: 6px; text-align: center; width: 90px; }
+  .badge { width: 44px; height: 44px; font-size: 16px; }
+  .evo-item b { font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: 0; }
+  .evo-item small { font-size: 10px; }
+  .evo-row > svg { width: 24px; margin-top: 14px; }
+  .t-quest .title { font-size: 23px; }
+  .tapes { height: 150px; margin-top: 16px; }
+  .tape { height: 46px; gap: 16px; padding-left: 20px; }
+  .tape-a { top: 46px; font-size: 20px; transform: rotate(4deg); } .tape-a .serif-it { font-size: 23px; }
+  .tape-b { top: 56px; font-size: 19px; transform: rotate(-5deg); gap: 14px; }
+  section.block { padding-top: 72px; }
+  #skills { padding-top: 56px; }
+  .head { flex-direction: column; align-items: flex-start; gap: 10px; margin-bottom: 24px; }
+  .head p { max-width: none; font-size: 15px; }
+  .tree-card { border-radius: 24px; padding: 20px; background-size: 20px 20px; }
+  .leaf { padding: 0 12px; }
+  .leaf small { display: none; }
+  .leaf b { font-size: 15px; }
+  .stage { border-radius: 22px; padding: 20px; box-shadow: 5px 5px 0 var(--ink); }
+  .stage h3 { font-size: 38px; }
+  .span-segs { height: 36px; gap: 4px; }
+  .span-segs div { padding: 0 10px; font-size: 12px; border-radius: 10px; }
+  .span-segs small { display: none; }
+  .span-ticks .mid { display: none; }
+  .chart-card { border-radius: 22px; padding: 22px; }
+  .ranks { gap: 10px; }
+  .rank { min-height: 110px; border-radius: 20px; padding: 16px; }
+  .rank b { font-size: 48px; }
+  .links { gap: 10px; }
+  .edu { margin-top: 10px; border-radius: 20px; padding: 18px; gap: 14px; align-items: flex-start; }
+  .edu-ic { width: 48px; height: 48px; }
+  .biz-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .biz { min-height: 170px; border-radius: 20px; padding: 16px; box-shadow: 4px 4px 0 var(--ink); }
+  .biz:last-child { grid-column: 1 / -1; }
+  .biz-top .mono { display: none; }
+  .biz-ic { width: 40px; height: 40px; }
+  .biz b { font-size: 18px; }
+  .biz-line { font-size: 12px; }
+  .links a { height: 110px; border-radius: 20px; padding: 16px; }
+  .links .h span { display: none; }
+  .links .h { justify-content: flex-end; }
+  .links b { font-size: 26px; }
+  footer { padding-top: 56px; }
+  .foot-meta span:last-child { display: none; }
+  .chart-card svg text { font-size: 20px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="nav">
+  <a href="#top" class="brand" aria-label="pozterz, back to top">
+    <span aria-hidden="true" style="width: 30px; height: 30px; border-radius: 9px; background: var(--hero); color: #F4F1EA; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: -0.04em">TN</span>
+    pozterz
+  </a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#skills"><span>02</span> Skill tree</a>
+    <a href="#evolution"><span>03</span> Evolution</a>
+    <a href="#contests"><span>04</span> Contest arc</a>
+    <a href="#next"><span>05</span> Next chapter</a>
+    <a href="#find"><span>06</span> Find me</a>
+  </nav>
+</header>
+
+<main id="top">
+<!-- Bento hero -->
+<section class="bento" aria-label="Profile">
+  <div class="tile t-name">
+    <svg class="rings" viewBox="0 0 520 520" fill="none" aria-hidden="true">
+      <circle cx="260" cy="260" r="80" stroke="#fff" stroke-opacity=".16" stroke-width="1.5"/>
+      <circle cx="260" cy="260" r="140" stroke="#fff" stroke-opacity=".13" stroke-width="1.5"/>
+      <circle cx="260" cy="260" r="200" stroke="#fff" stroke-opacity=".10" stroke-width="1.5"/>
+      <circle cx="260" cy="260" r="258" stroke="#fff" stroke-opacity=".07" stroke-width="1.5"/>
+      <circle cx="260" cy="260" r="36" fill="#FFD84D"/>
+    </svg>
+    <div class="pills"><span>RESUME · 2026</span><span class="hl">FULL-STACK ENGINEER</span></div>
+    <div>
+      <h1>Tharathep<br>Numuean&nbsp;<em class="serif-it">Jo.</em></h1>
+      <p>Full-stack engineer, nine years in. Now Software Development Supervisor at Netbay, previously Agoda and Pi R Square. A competitive programmer at heart.</p>
+    </div>
+  </div>
+
+  <div class="tile t-portrait">
+    <svg class="ring" viewBox="0 0 300 300" fill="none" aria-hidden="true"><circle cx="150" cy="150" r="148" stroke="#121212" stroke-opacity=".12" stroke-width="1.5"/><circle cx="150" cy="150" r="104" stroke="#121212" stroke-opacity=".12" stroke-width="1.5"/></svg>
+    <span class="mono-fallback" aria-hidden="true">TN</span>
+    <img src="https://graph.facebook.com/100005406396686/picture?width=800" alt="Portrait of Tharathep Numuean" loading="eager" onerror="this.remove()">
+  </div>
+
+  <div class="tile t-now">
+    <span class="tag" style="display:flex;align-items:center;gap:8px"><span class="dot"></span>NOW</span>
+    <div>
+      <div class="co">Netbay</div>
+      <div class="role">Software Development Supervisor</div>
+      <div class="meta">2.6 YRS · 2024–NOW</div>
+    </div>
+  </div>
+
+  <div class="tile t-xp">
+    <span class="tag">EXPERIENCE</span>
+    <div class="row"><span class="big-num">9</span><span>years<br>since 2017</span></div>
+  </div>
+
+  <div class="tile t-icpc">
+    <span class="tag">ACM-ICPC<span class="tag-long"> SOUTHERN</span> · 2016</span>
+    <div class="row">
+      <span class="big-num">#3</span>
+      <svg width="120" height="62" viewBox="0 0 120 62" fill="none" role="img" aria-label="Rank 58 in 2013 climbing to rank 3 in 2016"><path d="M8 54 L40 29 L72 17 L106 9" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="54" r="3.5" fill="#121212"/><circle cx="40" cy="29" r="3.5" fill="#121212"/><circle cx="72" cy="17" r="3.5" fill="#121212"/><circle cx="106" cy="9" r="5" fill="#fff" stroke="#121212" stroke-width="2"/></svg>
+    </div>
+  </div>
+
+  <div class="tile t-evo">
+    <span class="tag">EVOLUTION LINE</span>
+    <div class="evo-row">
+      <div class="evo-item"><span class="badge" style="background:var(--butter)">Pi</span><span><b>Pi R Square</b><small>2017 – 2021</small></span></div>
+      <svg width="56" height="16" viewBox="0 0 56 16" fill="none" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h50M45 2l7 6-7 6"/></svg>
+      <div class="evo-item"><span class="badge" style="background:var(--coral)">Ag</span><span><b>Agoda</b><small>2021 – 2024</small></span></div>
+      <svg width="56" height="16" viewBox="0 0 56 16" fill="none" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h50M45 2l7 6-7 6"/></svg>
+      <div class="evo-item"><span class="badge" style="background:var(--hero);color:var(--cream)">Nb</span><span><b>Netbay</b><small>2024 – now</small></span></div>
+    </div>
+  </div>
+
+  <div class="tile t-quest">
+    <span class="tag">NEXT QUEST</span>
+    <span class="title">LLMs &amp; document OCR</span>
+    <ul>
+      <li>Off-screen: crypto, investment, trading</li>
+      <li>Favourite places: Japan, Europe</li>
+      <li>What matters: family, coding, money</li>
+    </ul>
+  </div>
+</section>
+</main>
+</div>
+
+<!-- Crossing tapes -->
+<div class="tapes" aria-hidden="true">
+  <div class="tape tape-a"><span>Keep learning</span><span>✦</span><span>Keep growing</span><span>✦</span><span class="serif-it">keep your eyes on the stars</span><span>✦</span><span>Keep getting better</span><span>✦</span><span>Keep moving forward</span><span>✦</span><span class="serif-it">— me</span><span>✦</span><span>Keep learning</span><span>✦</span><span>Keep growing</span><span>✦</span><span class="serif-it">keep your eyes on the stars</span><span>✦</span><span>Keep getting better</span><span>✦</span><span>Keep moving forward</span><span>✦</span><span class="serif-it">— me</span></div>
+  <div class="tape tape-b"><span>React</span><i>✦</i><span>Next.js</span><i>✦</i><span>Tailwind CSS</span><i>✦</i><span>Angular</span><i>✦</i><span>Node.js</span><i>✦</i><span>NestJS</span><i>✦</i><span>Java Spring</span><i>✦</i><span>Python</span><i>✦</i><span>Laravel</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Docker</span><i>✦</i><span>LLMs</span><i>✦</i><span>Algorithms</span></div>
+</div>
+
+<div class="wrap">
+<!-- Skill tree -->
+<section id="skills" class="block">
+  <div class="head">
+    <div><span class="label">02 — Skill tree</span><h2>Skill tree, <span class="serif-it">unlocked</span></h2></div>
+    <p>Twenty-four skills on seven branches, sorted by where they live in the stack. The dashed branch is still levelling up.</p>
+  </div>
+  <div class="tree-card">
+    <div class="tree">
+      <div class="root"><span>ROOT</span><b>Full <br>stack</b><span>24 SKILLS</span></div>
+      <div class="trunk" aria-hidden="true"></div>
+      <ul class="branches">
+        <li class="branch b-fe">
+          <div class="node">Frontend <span>×6</span></div>
+          <ul class="leaves">
+            <li class="leaf"><i style="background:#149ECA"></i><span><b>React</b><small>UI library</small></span></li>
+            <li class="leaf"><i style="background:#121212"></i><span><b>Next.js</b><small>React framework</small></span></li>
+            <li class="leaf"><i style="background:#DD0031"></i><span><b>Angular</b><small>framework</small></span></li>
+            <li class="leaf"><i style="background:#F0DB4F;box-shadow:inset 0 0 0 1px #B8A421"></i><span><b>JavaScript</b><small>language</small></span></li>
+            <li class="leaf"><i style="background:#E34F26"></i><span><b>HTML5</b><small>markup</small></span></li>
+            <li class="leaf"><i style="background:#1572B6"></i><span><b>CSS3</b><small>styling</small></span></li>
+          </ul>
+        </li>
+        <li class="branch b-cf">
+          <div class="node">CSS frameworks <span>×3</span></div>
+          <ul class="leaves">
+            <li class="leaf"><i style="background:#38BDF8"></i><span><b>Tailwind CSS</b><small>utility-first</small></span></li>
+            <li class="leaf"><i style="background:#1677FF"></i><span><b>Ant Design</b><small>component library</small></span></li>
+            <li class="leaf"><i style="background:#121212"></i><span><b>shadcn/ui</b><small>component library</small></span></li>
+          </ul>
+        </li>
+        <li class="branch b-be">
+          <div class="node">Backend <span>×6</span></div>
+          <ul class="leaves">
+            <li class="leaf"><i style="background:#5FA04E"></i><span><b>Node.js</b><small>runtime</small></span></li>
+            <li class="leaf"><i style="background:#E0234E"></i><span><b>NestJS</b><small>Node framework</small></span></li>
+            <li class="leaf"><i style="background:#6DB33F"></i><span><b>Java Spring</b><small>framework</small></span></li>
+            <li class="leaf"><i style="background:#3776AB"></i><span><b>Python</b><small>language</small></span></li>
+            <li class="leaf"><i style="background:#777BB4"></i><span><b>PHP</b><small>language</small></span></li>
+            <li class="leaf"><i style="background:#FF2D20"></i><span><b>Laravel</b><small>framework</small></span></li>
+          </ul>
+        </li>
+        <li class="branch b-db">
+          <div class="node">Databases <span>×3</span></div>
+          <ul class="leaves">
+            <li class="leaf"><i style="background:#9A968C"></i><span><b>SQL</b><small>query language</small></span></li>
+            <li class="leaf"><i style="background:#4169E1"></i><span><b>PostgreSQL</b><small>relational</small></span></li>
+            <li class="leaf"><i style="background:#9A968C"></i><span><b>Vector databases</b><small>similarity search</small></span></li>
+          </ul>
+        </li>
+        <li class="branch b-wf">
+          <div class="node">Tooling <span>×3</span></div>
+          <ul class="leaves">
+            <li class="leaf"><i style="background:#2496ED"></i><span><b>Docker</b><small>containers</small></span></li>
+            <li class="leaf"><i style="background:#F05032"></i><span><b>Git</b><small>version control</small></span></li>
+            <li class="leaf"><i style="background:#F48024"></i><span><b>Stack Overflow</b><small>community</small></span></li>
+          </ul>
+        </li>
+        <li class="branch b-ps">
+          <div class="node">Problem solving <span>×1</span></div>
+          <ul class="leaves">
+            <li class="leaf"><i style="background:#1F9D63"></i><span><b>Algorithms &amp; data structures</b><small>ACM-ICPC × 4 years</small></span></li>
+          </ul>
+        </li>
+        <li class="branch b-nx next">
+          <div class="node">Levelling up <span>×2</span></div>
+          <ul class="leaves">
+            <li class="leaf"><i style="background:#9A968C"></i><span><b>LLMs</b><small>in progress</small></span></li>
+            <li class="leaf"><i style="background:#9A968C"></i><span><b>Document OCR</b><small>in progress</small></span></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="legend">
+      <span><span class="ln"></span>UNLOCKED</span>
+      <span><span class="ln dash"></span>LEVELLING UP</span>
+      <span><i style="width:12px;height:12px;border-radius:4px;background:#149ECA"></i>SWATCH = BRAND COLOUR · GREY = GENERAL SKILL</span>
+    </div>
+  </div>
+</section>
+
+<!-- Evolution -->
+<section id="evolution" class="block">
+  <div class="head">
+    <div><span class="label">03 — Evolution</span><h2>Three stages, <span class="serif-it">one line</span></h2></div>
+    <p>From intern to full-stack at Pi R Square, then the scale of Agoda, and now leading development at Netbay.</p>
+  </div>
+  <div class="stages">
+    <article class="stage stage-1">
+      <div class="top"><span>STAGE 1</span><span>~4 YRS</span></div>
+      <div>
+        <h3>Pi R Square</h3>
+        <p>Intern, then full-stack developer.</p>
+        <span class="years">2017 – 2021</span>
+      </div>
+    </article>
+    <div class="arrow" aria-hidden="true"><svg width="64" height="40" viewBox="0 0 64 40" fill="none"><path d="M12 20h38M44 14l6 6-6 6" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <article class="stage stage-2">
+      <div class="top"><span>STAGE 2</span><span>2.5 YRS</span></div>
+      <div>
+        <h3>Agoda</h3>
+        <p>Full Stack Developer</p>
+        <span class="years">2021 – 2024</span>
+      </div>
+    </article>
+    <div class="arrow" aria-hidden="true"><svg width="64" height="40" viewBox="0 0 64 40" fill="none"><path d="M12 20h38M44 14l6 6-6 6" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <article class="stage stage-3">
+      <div class="top"><span><span class="dot"></span>STAGE 3 · NOW</span><span>2.6 YRS</span></div>
+      <div>
+        <h3>Netbay</h3>
+        <p>Software Development Supervisor</p>
+        <span class="years">2024 – now</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="span-bar" role="img" aria-label="Career timeline: Pi R Square 2017 to 2021, Agoda 2021 to 2024, Netbay 2024 to now">
+    <div class="span-segs">
+      <div style="flex:4.7;background:var(--butter)">Pi R Square</div>
+      <div style="flex:2.5;background:var(--coral)">Agoda</div>
+      <div style="flex:2.55;background:var(--hero);color:var(--cream)">Netbay<small>NOW →</small></div>
+    </div>
+    <div class="span-ticks">
+      <span style="left:0">2017</span>
+      <span class="mid" style="left:10.26%">2018</span>
+      <span class="mid" style="left:20.51%">2019</span>
+      <span class="mid" style="left:30.77%">2020</span>
+      <span style="left:41.03%">2021</span>
+      <span class="mid" style="left:51.28%">2022</span>
+      <span class="mid" style="left:61.54%">2023</span>
+      <span style="left:71.79%">2024</span>
+      <span class="mid" style="left:82.05%">2025</span>
+      <span style="left:92.31%">2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- Contest arc -->
+<section id="contests" class="block">
+  <div class="head">
+    <div><span class="label">04 — Contest arc</span><h2>#58 to #3, <span class="serif-it">in four tries</span></h2></div>
+    <p>ACM-ICPC Thailand Southern Programming Contest, 2013–2016, while studying Computer Engineering at Prince of Songkla University.</p>
+  </div>
+  <div class="contest-grid">
+    <div class="chart-card">
+      <span class="label">Rank by year · 1 = top</span>
+      <svg viewBox="0 0 640 300" fill="none" role="img" aria-label="Rank by year: 2013 rank 58, 2014 rank 26, 2015 rank 11, 2016 rank 3">
+        <line x1="56" y1="24" x2="632" y2="24" stroke="#ECE7DC"/>
+        <line x1="56" y1="97.4" x2="632" y2="97.4" stroke="#ECE7DC"/>
+        <line x1="56" y1="174.7" x2="632" y2="174.7" stroke="#ECE7DC"/>
+        <line x1="56" y1="252" x2="632" y2="252" stroke="#121212" stroke-width="1.5"/>
+        <text x="44" y="28" text-anchor="end" font-size="11" fill="#5E5A51">#1</text>
+        <text x="44" y="101" text-anchor="end" font-size="11" fill="#5E5A51">#20</text>
+        <text x="44" y="179" text-anchor="end" font-size="11" fill="#5E5A51">#40</text>
+        <text x="44" y="256" text-anchor="end" font-size="11" fill="#5E5A51">#60</text>
+        <text x="110" y="280" text-anchor="middle" font-size="12" fill="#5E5A51">2013</text>
+        <text x="274" y="280" text-anchor="middle" font-size="12" fill="#5E5A51">2014</text>
+        <text x="438" y="280" text-anchor="middle" font-size="12" fill="#5E5A51">2015</text>
+        <text x="592" y="280" text-anchor="middle" font-size="12" fill="#5E5A51">2016</text>
+        <path d="M110 244.2 L274 120.6 L438 62.6 L592 31.7" stroke="var(--hero)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <g><title>2013 · Rank 58</title><circle cx="110" cy="244.2" r="12" fill="transparent"/><circle cx="110" cy="244.2" r="6" fill="var(--hero)" stroke="#fff" stroke-width="2"/></g>
+        <g><title>2014 · Rank 26</title><circle cx="274" cy="120.6" r="12" fill="transparent"/><circle cx="274" cy="120.6" r="6" fill="var(--hero)" stroke="#fff" stroke-width="2"/></g>
+        <g><title>2015 · Rank 11</title><circle cx="438" cy="62.6" r="12" fill="transparent"/><circle cx="438" cy="62.6" r="6" fill="var(--hero)" stroke="#fff" stroke-width="2"/></g>
+        <g><title>2016 · Rank 3</title><circle cx="592" cy="31.7" r="14" fill="transparent"/><circle cx="592" cy="31.7" r="9" fill="#FFD84D" stroke="#121212" stroke-width="2"/></g>
+        <text x="124" y="232" font-size="13" fill="#121212">#58</text>
+        <text x="288" y="112" font-size="13" fill="#121212">#26</text>
+        <text x="452" y="56" font-size="13" fill="#121212">#11</text>
+        <text x="574" y="58" text-anchor="end" font-size="13" font-weight="500" fill="#121212">#3</text>
+      </svg>
+    </div>
+    <ol class="ranks">
+      <li class="rank"><span class="y">2013</span><b>#58</b></li>
+      <li class="rank"><span class="y">2014</span><b>#26</b></li>
+      <li class="rank"><span class="y">2015</span><b>#11</b></li>
+      <li class="rank podium"><span class="y"><span>2016</span><span>PODIUM</span></span><b>#3</b></li>
+    </ol>
+  </div>
+  <div class="edu">
+    <span class="edu-ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/></svg></span>
+    <div><span class="label">Education</span><b>Prince of Songkla University, Phuket Campus</b><span>Bachelor’s degree · Computer Engineering</span></div>
+  </div>
+</section>
+
+<!-- Next chapter -->
+<section id="next" class="block">
+  <div class="head">
+    <div><span class="label">05 — Next chapter</span><h2>Where I want to <span class="serif-it">build next</span></h2></div>
+    <p>The industries I’d like my next chapter to be in.</p>
+  </div>
+  <ul class="biz-grid">
+    <li class="biz" style="background:var(--hero);color:var(--cream)"><span class="biz-top"><span class="biz-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v5M12 16v5M3 12h5M16 12h5M6.5 6.5l2.5 2.5M15 15l2.5 2.5M17.5 6.5L15 9M9 15l-2.5 2.5"/></svg></span><span class="mono">01</span></span><span><b>AI development</b><span class="biz-line">LLMs are already on my levelling-up branch.</span></span></li>
+    <li class="biz" style="background:var(--mint)"><span class="biz-top"><span class="biz-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></span><span class="mono">02</span></span><span><b>Investment</b><span class="biz-line">Markets are what I study off-screen.</span></span></li>
+    <li class="biz" style="background:var(--butter)"><span class="biz-top"><span class="biz-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 7.5h4a2.2 2.2 0 010 4.5h-4 4.5a2.2 2.2 0 010 4.5h-4.5zM11 6v1.5M11 16.5V18"/></svg></span><span class="mono">03</span></span><span><b>Cryptocurrency</b><span class="biz-line">Where engineering meets my off-screen interests.</span></span></li>
+    <li class="biz" style="background:var(--lilac)"><span class="biz-top"><span class="biz-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l5 5v13H7zM14 3v5h5M4 13h16"/></svg></span><span class="mono">04</span></span><span><b>Document OCR</b><span class="biz-line">Turning paper into data — already levelling up here.</span></span></li>
+    <li class="biz" style="background:var(--coral)"><span class="biz-top"><span class="biz-ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19V6M3 14h18v5M21 14a3 3 0 00-3-3h-7v3M7 12.5a1.8 1.8 0 100-3.6 1.8 1.8 0 000 3.6z"/></svg></span><span class="mono">05</span></span><span><b>Hotel booking</b><span class="biz-line">Built there for 2.5 years at Agoda.</span></span></li>
+  </ul>
+</section>
+
+<!-- Find me -->
+<section id="find" class="block">
+  <span class="label">06 — Find me</span>
+  <div class="links">
+    <a class="l-gh" href="https://github.com/Pozterz" target="_blank" rel="noopener"><span class="h"><span>github.com/Pozterz</span><svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10L10 4M5 4h5v5"/></svg></span><b>GitHub</b></a>
+    <a class="l-li" href="https://linkedin.com/in/pozterz/" target="_blank" rel="noopener"><span class="h"><span>in/pozterz</span><svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10L10 4M5 4h5v5"/></svg></span><b>LinkedIn</b></a>
+    <a class="l-md" href="https://medium.com/@pozterz.jojo" target="_blank" rel="noopener"><span class="h"><span>@pozterz.jojo</span><svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10L10 4M5 4h5v5"/></svg></span><b>Medium</b></a>
+    <a class="l-fb" href="https://fb.com/Pozterzz" target="_blank" rel="noopener"><span class="h"><span>fb.com/Pozterzz</span><svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10L10 4M5 4h5v5"/></svg></span><b>Facebook</b></a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-meta"><span>© 2026 Tharathep Numuean</span><span>Full-stack engineer · since 2017</span></div>
+  <div class="wordmark" aria-hidden="true">Tharathep</div>
+</footer>
+</div>
+</body>
+</html>
